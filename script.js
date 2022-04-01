@@ -1,3 +1,4 @@
+// assign api key value to myKey on line 26
 $(".city-btn").click(function () {
 	// alert('button clicked');
 	$(".city-form").css({
