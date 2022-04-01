@@ -1,0 +1,306 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	outline: none;
+	font-family: "Menlo", sans-serif;
+	backround-color: Ivory;
+}
+section {
+	position: relative;
+	overflow: hidden;
+}
+.container {
+	padding: 20px;
+}
+#main,
+#header {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-content: space-around;
+	justify-content: space-evenly;
+	border-radius: 10px;
+	background-color: Ivory;
+}
+#header {
+	visibility: hidden;
+	opacity: 0;
+	z-index: -1;
+	flex-direction: column;
+	margin-top: 20px;
+	box-shadow: 0px 0px 8px 8px #585454;
+	border-radius: 10px;
+}
+#main {
+	flex-direction: column;
+	margin-top: 20px;
+	box-shadow: 0px 0px 8px 8px rgb(43, 11, 11);
+}
+.choice-section .col {
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center;
+}
+.choice-section .col h1 {
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 1.5px;
+	color: rgb(43, 11, 11);
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+.choice-section .col h3 {
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 1.5px;
+	color: rgb(43, 11, 11);
+	font-style: italic;
+	font-size: 1rem;
+}
+.btn-section button {
+	padding: 20px;
+	margin: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2rem;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	color: rgb(46, 41, 41);
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 15px;
+	cursor: pointer;
+	transition: all 0.5s;
+	background-color: transparent;
+}
+.btn-section button:hover {
+	border-radius: 3px;
+	background-color: rgba(219, 203, 203, 0.8);
+	color: #2b2121;
+}
+.btn-section button {
+	border-radius: 20px 3px 20px 3px;
+}
+.btn-section button:hover {
+	border-radius: 3px 20px 3px 20px;
+}
+.form-section {
+	height: 40vh;
+	width: 50vw;
+	position: relative;
+	display: inline-block;
+	align-content: space-around;
+	justify-content: space-evenly;
+	overflow: hidden;
+}
+.form-section form {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	justify-content: space-evenly;
+	left: -100%;
+	visibility: hidden;
+}
+.form-section form h1 {
+	text-transform: capitalize;
+	letter-spacing: 1.5px;
+	font-size: 2rem;
+	color: rgb(37, 17, 17);
+	font-weight: lighter;
+}
+.form-section form button {
+	height: 8vh;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: rgb(37, 17, 17);
+	background-color: transparent;
+	border: 1px solid rgb(37, 17, 17);
+	border-radius: 15px;
+	cursor: pointer;
+	letter-spacing: 1.5px;
+	transition: all 0.5s;
+}
+.form-section form button:hover {
+	background-color: rgb(164, 201, 212);
+	color: #6193af;
+	border-radius: 5px;
+}
+.form-section form input {
+	height: 8vh;
+	border-radius: 15px;
+	border: 1px solid rgb(37, 17, 17);
+	background-color: transparent;
+	transition: all 0.5s ease-in-out;
+	padding-left: 10px;
+	font-weight: lighter;
+	font-size: 1.1rem;
+	color: rgb(37, 17, 17);
+	position: relative;
+}
+.form-section form input::placeholder {
+	font-weight: bold;
+	font-size: 1.3rem;
+	color: rgb(37, 17, 17) te;
+	padding-left: 10px;
+	text-transform: capitalize;
+	letter-spacing: 0.2rem;
+	transition: all 0.5s;
+}
+.form-section form input:focus::placeholder {
+	opacity: 0;
+	visibility: hidden;
+}
+.form-section form input:focus {
+	border: none;
+	border-bottom: 1px solid rgb(116, 159, 184);
+	border-radius: 0px;
+	transition: all 0.5s ease-in-out;
+}
+.location {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.country {
+	font-weight: bold;
+	font-size: 2rem;
+	letter-spacing: 1.5px;
+	color: #323232;
+}
+.go-back {
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.date-time,
+.go-back {
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: rgba(0, 0, 0, 0.5);
+}
+.first-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.current-weather {
+	height: 20vh;
+	width: 10vw;
+	display: block;
+	margin: auto;
+}
+.weather-img img {
+	height: 15vh;
+}
+.weather-desc {
+	color: #14140e;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+.temperature {
+	height: 15vh;
+	width: 13vw;
+	display: grid;
+	align-content: space-around;
+	justify-content: space-evenly;
+	grid-template-rows: 7vh 0.99fr;
+	grid-template-columns: 0.99fr;
+	text-align: center;
+	position: relative;
+}
+.current-temp h1 {
+	padding-top: 15px;
+	font-weight: bold;
+	font-size: 2.5rem;
+	color: #323232;
+}
+.min-max-temp {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding-top: 10px;
+}
+.min-max-temp b {
+	font-size: 1.7rem;
+	color: #241818d5;
+}
+.min-temp h3 {
+	font-weight: lighter;
+	font-size: 1.7rem;
+	color: rgba(0, 0, 0, 0.5);
+}
+.max-temp h3 {
+	font-weight: lighter;
+	font-size: 1.7rem;
+	color: rgba(0, 0, 0, 0.5);
+}
+.wind-pressure {
+	height: 18vh;
+	display: grid;
+}
+.wind-pressure ul {
+	display: grid;
+	align-content: space-around;
+	justify-content: space-around;
+}
+.wind-pressure ul li {
+	letter-spacing: 1px;
+	font-size: 1.3rem;
+	color: #1b1414;
+	font-weight: bold;
+}
+.wind-pressure ul li span {
+	color: rgba(0, 0, 0, 0.5);
+}
+.sec-row {
+	display: flex;
+	background-color: #99c0d6;
+	align-items: center;
+	justify-content: space-around;
+}
+.sec-row .tm1,
+.tm2,
+.tm3,
+.tm4,
+.tm5 {
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
+.sec-row img {
+	height: 12vh;
+	width: 7vw;
+}
+.dt-txt {
+	padding-top: 10px;
+	font-weight: lighter;
+	font-size: 1.5rem;
+	color: #0c0a0a;
+}
+.next-day-temp {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 5vh;
+}
+.next-day-temp h3 {
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: rgba(0, 0, 0, 0.5);
+}
+.clear-sky-gif,
+.clouds-gif,
+.rain-gif,
+.snow-gif {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	opacity: 0;
+	visibility: hidden;
+}
